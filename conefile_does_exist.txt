@@ -1,0 +1,1 @@
+phlf_protein_interaction_1 phlf_degradation_interaction phlf_protein_interaction_1 phlf_degradation_interaction tein_interaction_1 phlf_degradation_interaction 

@@ -120,8 +120,12 @@ with open(filename + "_" + conefilename + "_final_result.txt", 'w') as result:
         # print("--- --- bad trace: " + line.rstrip("\n"))
       # print(str(state_list[0].path_exists(line.rstrip("\n").split())))
 
-print("All done. " + str(good_path_count) + " paths matched, with " + str(bad_path_count) + " mismatched.")
-print(str((float(bad_path_count)*100.0)/float(good_path_count)) + "% mismatched paths ")
+with open(filename + "_facts.txt","w") as wf:
+  wf.write("All done. " + str(good_path_count) + " paths matched, with " + str(bad_path_count) + " mismatched.")
+  print("All done. " + str(good_path_count) + " paths matched, with " + str(bad_path_count) + " mismatched.")
+  wf.write("\n")
+  wf.write(str((float(bad_path_count)*100.0)/float(good_path_count)) + "% mismatched paths ")
+  print(str((float(bad_path_count)*100.0)/float(good_path_count)) + "% mismatched paths ")
 
 
 

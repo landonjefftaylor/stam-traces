@@ -1,0 +1,42 @@
+
+yfp_protein_interaction_0
+
+topModel_YFPpart_module_sub__ko_f = 0.033
+topModel_YFPpart_module_sub__ko_r = 1
+topModel_YFPpart_module_sub__ko = 0.05
+topModel_YFPpart_module_sub__nr = 30
+topModel_YFPpart_module_sub__pPhlF = 2
+topModel_YFPpart_module_sub__nc = 2
+topModel_YFPpart_module_sub__kr_f = 0.5
+topModel_YFPpart_module_sub__kr_r = 1
+PhlF_protein = 70
+
+
+(check if guard > 0 .. guard is equal to prob )
+
+
+(((((topModel_YFPpart_module_sub__pPhlF*topModel_YFPpart_module_sub__ko)*topModel_YFPpart_module_sub__ko_f)/topModel_YFPpart_module_sub__ko_r)*topModel_YFPpart_module_sub__nr)/((1+((topModel_YFPpart_module_sub__ko_f/topModel_YFPpart_module_sub__ko_r)*topModel_YFPpart_module_sub__nr))+
+(((topModel_YFPpart_module_sub__kr_f/topModel_YFPpart_module_sub__kr_r)*PhlF_protein)^topModel_YFPpart_module_sub__nc)))
+
+answer = 8.0685e-05
+
+
+====================================================================
+
+yfp_protein_interaction_1
+
+topModel_YFPpart_module_sub__ko_f = 0.033
+topModel_YFPpart_module_sub__ko_r = 1
+topModel_YFPpart_module_sub__ko = 0.05
+topModel_YFPpart_module_sub__nr = 30
+topModel_YFPpart_module_sub__pPhlF = 2
+topModel_YFPpart_module_sub__nc = 2
+topModel_YFPpart_module_sub__kr_f = 0.5
+topModel_YFPpart_module_sub__kr_r = 1
+PhlF_protein = 70
+BetI_protein = 70
+topModel_YFPpart_module_sub__pBetI = 2
+
+(((((topModel_YFPpart_module_sub__pBetI*topModel_YFPpart_module_sub__ko)*topModel_YFPpart_module_sub__ko_f)/topModel_YFPpart_module_sub__ko_r)*topModel_YFPpart_module_sub__nr)/((1+((topModel_YFPpart_module_sub__ko_f/topModel_YFPpart_module_sub__ko_r)*topModel_YFPpart_module_sub__nr))+ (((topModel_YFPpart_module_sub__kr_f/topModel_YFPpart_module_sub__kr_r)*BetI_protein)^topModel_YFPpart_module_sub__nc)))
+
+answer = 8.0685e-05

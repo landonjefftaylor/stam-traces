@@ -102,7 +102,7 @@ const double topModel_HlyIIRpart_module_sub__ka = 0.25; // topModel_HlyIIRpart_m
 const int AmtR_protein_MAX = MAX_AMOUNT;
 module AmtR_protein
 
-	AmtR_protein : [0..AmtR_protein_MAX] init 0; // Initial amount 0
+	AmtR_protein : [0..AmtR_protein_MAX] init 40; // Initial amount 0
 
 	// AmtR_degradation_interaction
 	[AmtR_degradation_interaction] AmtR_protein > 9 -> (AmtR_protein'=AmtR_protein-10);
@@ -162,7 +162,7 @@ endmodule
 const int YFP_protein_MAX = MAX_AMOUNT;
 module YFP_protein
 
-	YFP_protein : [0..YFP_protein_MAX] init 40; // Initial amount 0
+	YFP_protein : [0..YFP_protein_MAX] init 0; // Initial amount 0
 
 	// YFP_degradation_interaction
 	[YFP_degradation_interaction] YFP_protein > 9 -> (YFP_protein'=YFP_protein-10);

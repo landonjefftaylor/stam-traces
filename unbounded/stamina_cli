@@ -6,9 +6,9 @@ PRISM
 =====
 
 Version: 4.5
-Date: Wed Aug 04 10:19:27 MDT 2021
+Date: Wed Aug 04 12:52:51 MDT 2021
 Hostname: el176-deeplearning
-Memory limits: cudd=1g, java(heap)=2g
+Memory limits: cudd=16g, java(heap)=2g
 
 Type:        CTMC
 Modules:     AmtR_protein BetI_protein HlyIIR_protein PhlF_protein YFP_protein topModel_AmtRpart_module_sub__pBAD topModel_AmtRpart_module_sub__pHlyIIR topModel_YFPpart_module_sub__pPhlF topModel_YFPpart_module_sub__pBetI topModel_BetIpart_module_sub__pHlyIIR topModel_BetIpart_module_sub__pTet topModel_PhlFpart_module_sub__pTac topModel_PhlFpart_module_sub__pAmtR topModel_HlyIIRpart_module_sub__pTet topModel_HlyIIRpart_module_sub__pBAD reaction_rates 
@@ -29,12 +29,12 @@ Warning: Model contains one or more unbounded variables: model construction may 
 
 Computing reachable states...
 Warning: Infinite State system: Reachability analysis based on reachabilityThreshold=1.0
- 60931 100347 135162 165661 192899 217217 240967 264965 284654 307765 326529 345707 365189 384384 403026 421065 438308 454838 471674 489528 506903 525339 states
- 1 178922 354973 525339 states
-Reachable states exploration and model construction done in 74.89 secs.
+ 59472 100191 134636 164718 192969 217554 241546 265364 285500 307953 326623 345782 365024 384296 402424 420205 437101 454156 471130 488748 506293 525339 states
+ 1 190653 379239 525339 states
+Reachable states exploration and model construction done in 74.429 secs.
 Sorting reachable states list...
 
-Time for model construction: 75.299 seconds.
+Time for model construction: 74.88 seconds.
 
 Type:        CTMC
 States:      525339 (1 initial)
@@ -48,9 +48,9 @@ Starting transient probability computation...
 
 Uniformisation: q.t = 1.1204262062203303 x 1000.0 = 1120.4262062203302
 Fox-Glynn (1.25E-7): left = 883, right = 1406
-Transient probability computation took 1407 iters and 121.576 seconds.
+Transient probability computation took 1407 iters and 121.298 seconds.
 
-Time for model checking: 121.621 seconds.
+Time for model checking: 121.344 seconds.
 
 Result: 4.9126541477052896E-5 (minimum bound)
 
@@ -68,7 +68,7 @@ Warning: Model contains one or more unbounded variables: model construction may 
 
 Computing reachable states...
 Warning: Infinite State system: Reachability analysis based on reachabilityThreshold=1.517710072051352E-9
- 535858 552621 570525 582241 598019 617224 626526 642744 654125 669670 681785 695953 708945 721711 734915 747410 759619 773073 784226 798693 808297 824320 832812 850808 857336 867640 881925 890600 907822 914076 924671 939213 946738 958987 970827 979241 997274 1002527 1011126 1028157 1033738 1041860 1058785 1064352 1072589 1090167 1095055 1102906 1116804 1122155 states
- 1 192754 378673 564698 739728 909496 1074128 1122155 states
-Reachable states exploration and model construction done in 166.381 secs.
+ 536066 552538 570340 581560 597431 613172 625385 642080 652711 668720 680101 694789 706635 720501 732119 745970 757228 771816 781566 797465 806053 823254 830532 842404 855111 864372 880219 887959 900543 911739 920967 937735 943861 953970 968816 976465 987848 1000225 1008089 1020437 1031193 1038868 1050802 1061693 1069141 1080186 1092735 1099774 1109461 1122155 states
+ 1 190712 377325 559739 732197 903663 1070989 1122155 states
+Reachable states exploration and model construction done in 167.617 secs.
 Sorting reachable states list...

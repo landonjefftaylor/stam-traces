@@ -102,7 +102,7 @@ print("Now checking paths")
 good_path_count = 0
 bad_path_count = 0
 
-with open(filename + "_" + conefilename + "_final_result.txt", 'w') as result:
+with open(filename + "_" + conefilename.replace('/', '') + "_final_result.txt", 'w') as result:
   result.write("Below are the traces that IVy found that STAMINA did not find:\n\n")
   with open(conefilename, 'r') as conefile:
     for line in conefile:
